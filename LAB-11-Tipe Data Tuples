@@ -1,0 +1,21 @@
+#71200595 Gerry Sunjay Junjung
+def rapor(pelajaran):
+    print (10*'=','Rapor Siswa','='*10)
+    nama = str(input('Masukan Nama Siswa/Siswi : '))
+    total = []
+    listpelajaran = list(pelajaran)
+    n = 0
+    for x in range(0,1,1+n):
+        for i in listpelajaran:
+            nilai = int(input(f"Masukkan Nilai Pelajaran {i} : "))
+            total.append(nilai)
+    jumlahnilai = len(pelajaran)
+    total = sum(total)
+    rata_rata = total/jumlahnilai
+    print ('Rata-Rata Nilai',nama, 'Adalah : ',rata_rata)
+    if rata_rata >= 75:
+        print ('Selamat ',nama,' Naik Kelas')
+    else :
+        print ('Selamat ',nama,' Tidak Naik Kelas, Silahkan Mengulang Lagi') 
+pelajaran =  ('Agama','PKN','Bahasa Indonesia','Bahasa Inggris','Matematika','Sejarah','Seni Budaya','Penjaskes','Fisika','Kimia','Biologi','TIK',)
+rapor(pelajaran)
